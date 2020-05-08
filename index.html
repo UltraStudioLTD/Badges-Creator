@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Stylesheet" href="styles.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <title>Badge Creator</title>
+</head>
+<body>
+    <h1>Badge Creator</h1>
+    <div id="properties">
+        <label for="badge-name">Badge Name: </label>
+        <input id="badge-name" type="text">
+        <label for="badge-description">Badge Description: </label>
+        <input id="badge-description" type="text">
+        <label for="badge-color">Badge Color: </label>
+        <input id="badge-color" type="color">
+        <input type="button" onclick="return generate()" value="Generate">
+    </div>
+    <span id="link-text" style="display: none;"></span>
+    <br><br><br>
+    <div id="image-copy">
+        <div id="display"></div>
+        <img id="copy-icon" style="width: 20px; display: none;" src="https://image.flaticon.com/icons/png/512/88/88026.png" onclick="copy()">
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
